@@ -15,8 +15,6 @@ setup(
         'flake8',
         'isort',
         'pylint',
-        'eslint',
-        'prettier'
     ],
     entry_points={
         'console_scripts': [

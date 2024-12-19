@@ -2,6 +2,19 @@
 
 A collection of pre-commit hooks used across ParisNeo projects.
 
+## Prerequisites
+
+For JavaScript hooks:
+```bash
+npm install -g eslint prettier
+```
+
+For Python hooks:
+```bash
+pip install pre-commit
+```
+```
+
 ## Installation
 
 1. Install pre-commit:
