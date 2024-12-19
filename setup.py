@@ -3,9 +3,10 @@ from setuptools import setup, find_packages
 setup(
     name='parisneo-precommit-hooks',
     version='0.1.0',
-    packages=find_packages(),
+    packages=find_packages(include=['parisneo_hooks', 'parisneo_hooks.*']),
+    package_dir={'': '.'},
     author='ParisNeo',
-    author_email='parisneo@gmail.com',
+    author_email='parisneo@GMAIL.COM',
     description='ParisNeo\'s Custom Pre-commit Hooks',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',

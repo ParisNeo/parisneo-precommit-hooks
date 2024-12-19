@@ -4,11 +4,12 @@
     entry: parisneo-python-check
     language: python
     types: [python]
+    additional_dependencies: [.]
 
 -   id: parisneo-js-check
     name: ParisNeo JavaScript Style Check
     description: Enforces ParisNeo's JavaScript coding standards
     entry: parisneo-js-check
     language: python
-    types: [javascript, jsx, tsx, vue]
-
+    types: [javascript]
+    additional_dependencies: [.]
