@@ -11,9 +11,4 @@
     entry: parisneo-js-check
     language: python
     types: [javascript, jsx, tsx, vue]
-repos:
--   repo: https://github.com/ParisNeo/parisneo-precommit-hooks
-    rev: v0.1.0  # Use the latest version
-    hooks:
-    -   id: parisneo-python-check
-    -   id: parisneo-js-check
+
