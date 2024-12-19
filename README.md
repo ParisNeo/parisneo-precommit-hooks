@@ -36,7 +36,7 @@ pre-commit install
 - Runs eslint for style checking
 
 
-## Configuration
+## Configuration (fully automated)
 
 Create a `setup.cfg` in your project root:
 ```ini
@@ -101,4 +101,36 @@ repos:
 2. Initialize:
 ```bash
 pre-commit install
+```
+
+## Configuration (manual)
+
+1. Add to your project's `.pre-commit-config.yaml`:
+```yaml
+repos:
+-   repo: https://github.com/ParisNeo/parisneo-precommit-hooks
+    rev: v0.1.0  # Use the latest version
+    hooks:
+    -   id: parisneo-python-check
+    -   id: parisneo-js-check
+```
+
+2. make sure pre-commit is installed
+
+
+### Run on all files
+```bash
+pre-commit run --all-files
+```
+### Run specific hook
+```bash
+pre-commit run parisneo-python-check
+```
+```bash
+pre-commit run parisneo-js-check
+```
+
+# Run on specific files
+```bash
+pre-commit run --files path/to/file.py
 ```
